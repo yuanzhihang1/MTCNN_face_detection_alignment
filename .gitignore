@@ -3,7 +3,10 @@
 *L
 output/*
 *.pt
+<<<<<<< HEAD
 *.kmodel
+=======
+>>>>>>> origin/master
 tmp/*
 data/Cache/*
 nohup.out

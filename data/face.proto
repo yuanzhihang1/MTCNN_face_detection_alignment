@@ -1,0 +1,17 @@
+// this is proto for training of face detection
+//  written by yzh
+syntax="proto2";
+
+message Image{
+    //the data will be the numpy array string
+    required bytes data =1;
+    repeated int32 dim=2;
+    optional float iou=3;
+    optional bytes shift=4;
+}
+
+message Datasets{
+    repeated Image face=1;
+    repeated Image part_face=2;
+    repeated Image back=3;
+}
